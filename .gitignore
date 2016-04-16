@@ -8,4 +8,4 @@ archive/
 !dist/application/db_changes/*
 !dist/application/helpers/*
 !dist/application/third_party/larcity/*
-disty
+dist/application/system
