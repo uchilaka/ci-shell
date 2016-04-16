@@ -1,2 +1,2 @@
 #!/bin/bash
-zip -r archive/full-on-example_$(date +"%Y%m%d_%H%M%S").zip full-on-example
+zip -r archive/full-on-example_$(date +"%Y%m%d_%H%M%S").zip dist
