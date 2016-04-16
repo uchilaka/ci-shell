@@ -3,3 +3,10 @@ composer.v1.json
 push
 *.zip
 archive/
+dist/*
+!dist/application/controllers
+!dist/application/models
+!dist/application/db_changes
+!dist/application/helpers
+!dist/application/third_party/larcity
+!dist/application/third_party/uchilaka
