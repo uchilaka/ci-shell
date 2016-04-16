@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-0": {
-            "LarCity\\CodeIgniter\\Shell": "dist-standalone/"
+            "LarCity\\CodeIgniter\\Shell": "copy-contents-to-ci-root/"
         }
     }
 }
