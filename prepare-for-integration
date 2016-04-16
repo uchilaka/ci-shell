@@ -1,2 +1,10 @@
 #!/bin/bash
-zip -r archive/integrate-kit_$(date +"%Y%m%d_%H%M%S").zip dist --include @zipexclude.lst
+ARCHD="$(pwd)/archive"
+ARCH="${ARCHD}/integrate-kit_"$(date +"%Y%m%d_%H%M%S").zip
+echo "Preparing archive @ $ARCH..."
+if ! [ -d $ARCHD ]; then 
+   mkdir -p $ARCHD
+else
+   echo "Directory ${ARCHD} found! Continuing work..."
+fi
+zip -r $ARCH dist --include @zipinclude.lst

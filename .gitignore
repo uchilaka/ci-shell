@@ -1,7 +1,7 @@
 test/vendor
 composer.v1.json
 *.zip
-archive/
+archive/*.zip
 !dist/application/controllers/*
 !dist/application/models/*
 !dist/application/db_changes/*
