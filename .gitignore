@@ -1,3 +1,5 @@
 test/vendor
 composer.v1.json
 push
+*.zip
+archive/
