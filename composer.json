@@ -9,7 +9,7 @@
         }
     ],
     "config": {
-        "vendor-dir": "copy-contents-to-ci-root/application/third_party"
+        "vendor-dir": "dist/application/third_party"
     },
     "minimum-stability": "dev",
     "devDependencies": {
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-0": {
-            "LarCity\\CodeIgniter\\Shell": "copy-contents-to-ci-root/"
+            "LarCity\\CodeIgniter\\Shell": "dist/"
         }
     }
 }
