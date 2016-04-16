@@ -1,0 +1,33 @@
+{
+    "name": "uchilaka/ci-shell",
+    "description": "Libraries and configurations for LarCity CodeIgniter (client) projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uche Chilaka",
+            "email": "uche@larcity.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "copy-contents-to-ci-root/application/third_party"
+    },
+    "minimum-stability": "dev",
+    "devDependencies": {
+        "bshaffer/oauth2-server-php": "~1.8",
+        "auth0/auth0-php": "~3.0"
+    },
+    "dependencies": {
+        "bshaffer/oauth2-server-php": "~1.8",
+        "auth0/auth0-php": "~3.0"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "bshaffer/oauth2-server-php": "~1.8",
+        "auth0/auth0-php": "~3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "LarCity\\CodeIgniter\\Shell": "dist-standalone/"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "uchilaka",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://uchilaka_@bitbucket.org/uchilaka_/com.larcity.codeigniter.shell.git"
+        }
+    ],
+    "require": {
+        "uchilaka/ci-shell": "dev-master"
+    }
+}
