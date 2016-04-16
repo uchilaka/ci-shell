@@ -412,5 +412,80 @@
             "oauth",
             "oauth2"
         ]
+    },
+    {
+        "name": "uchilaka/ci-shell",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/uchilaka/com.larcity.codeigniter.shell.git",
+            "reference": "65026cc9d6c268aed1e233ab2657654e4d0623df"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/uchilaka/com.larcity.codeigniter.shell/zipball/65026cc9d6c268aed1e233ab2657654e4d0623df",
+            "reference": "65026cc9d6c268aed1e233ab2657654e4d0623df",
+            "shasum": ""
+        },
+        "require": {
+            "auth0/auth0-php": "~3.0",
+            "bshaffer/oauth2-server-php": "~1.8",
+            "php": ">=5.4.0"
+        },
+        "time": "2016-04-16 19:17:20",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "LarCity\\CodeIgniter\\Shell": "copy-contents-to-ci-root/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Uche Chilaka",
+                "email": "uche@larcity.com"
+            }
+        ],
+        "description": "Libraries and configurations for LarCity CodeIgniter (client) projects",
+        "support": {
+            "source": "https://github.com/uchilaka/com.larcity.codeigniter.shell/tree/master",
+            "issues": "https://github.com/uchilaka/com.larcity.codeigniter.shell/issues"
+        }
+    },
+    {
+        "name": "mikey179/vfsStream",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mikey179/vfsStream.git",
+            "reference": "fc0fe8f4d0b527254a2dc45f0c265567c881d07e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/fc0fe8f4d0b527254a2dc45f0c265567c881d07e",
+            "reference": "fc0fe8f4d0b527254a2dc45f0c265567c881d07e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-08-25 12:49:29",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "org\\bovigo\\vfs": "src/main/php"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "homepage": "http://vfs.bovigo.org/"
     }
 ]
