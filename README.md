@@ -25,7 +25,7 @@ That's it!
 
 ### Starting from scratch with CodeIgniter? 
 
-This you would like to use our shell setup? All you need to do is run `./prepare-baseline` in the root directory of your pull. This will:
+Think you would like to use our shell setup? All you need to do is run `./prepare-baseline` in the root directory of your pull. This will:
 
 * Create an `archive/` directory with a zip file called `baseline-kit_<timestamp>.zip`. 
 * Unzip this file and copy it <em>en sum</em> as your CodeIgniter baseline to get started.
