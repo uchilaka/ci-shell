@@ -1,0 +1,4 @@
+dist/application/controllers/*
+dist/application/db_changes/*
+dist/application/models/*
+dist/third_party/larcity/*

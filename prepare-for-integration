@@ -1,0 +1,2 @@
+#!/bin/bash
+zip -r archive/integrate-kit_$(date +"%Y%m%d_%H%M%S").zip dist --include @zipexclude.lst
