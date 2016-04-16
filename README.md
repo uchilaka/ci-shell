@@ -2,6 +2,6 @@
 
 Love CodeIgniter? You could use it too. Keep with you like. Junk what you don't. 
 
-Licensed via [MIT](LICENSE.txt) so - at your own risk peeps ;). 
+Licensed via [MIT](LICENSE.md) so - at your own risk peeps ;). 
 
 More documentation to come as we develop this toolkit. 
