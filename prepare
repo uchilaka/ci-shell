@@ -1,0 +1,2 @@
+#!/bin/bash
+zip -r full-on-example_$(date +"%Y%m%d").zip full-on-example
