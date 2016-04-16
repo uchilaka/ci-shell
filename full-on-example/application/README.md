@@ -13,7 +13,8 @@ for a symlink that ends in a directory, and like this for one that ends in a fil
 ```
 ../shell/libraries/OAuth2lib.php
 ```
-to see the file whose contents you need to copy in place of the link file. 
+to see the file whose contents you need to copy in place of the link file. The paths will always be 
+relative to the spot right where the symlink file is at.
 
 In a UNIX (OSX / Linux) environment, these function like shortcuts in windows.
 
