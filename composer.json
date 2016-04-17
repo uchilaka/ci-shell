@@ -24,6 +24,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/uchilaka/com.larcity.ci-auth0client.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/uchilaka/com.larcity.codeigniter.shell.git"
         }
     ],
     "require": {
@@ -33,7 +37,8 @@
     },
     "autoload": {
         "psr-0": {
-            "LarCity\\CodeIgniter\\Shell": "dist/"
+            "LarCity\\CodeIgniter\\Shell": "dist/",
+            "UChilaka\\CodeIgniter": "dist/"
         }
     }
 }
