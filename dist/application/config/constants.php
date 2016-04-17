@@ -1,9 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/** @important be sure to include the use statements **/
-# use LarCity\CodeIgniter\Shell;
-# use UChilaka\CodeIgniter;
+/** Example environment setup using customized ContextOption sub class **/
+use LarCity\CodeIgniter\Shell;
+
+// Declare third party path constant
+if(!defined('_3RD_PARTY_PATH_NOTAIL')) {
+    define('_3RD_PARTY_PATH_NOTAIL', dirname(__DIR__) . DIRECTORY_SEPARATOR . 'third_party');
+}
+
+// Refrerence our helpers file of important functions from our (symlinked) larcity third party directory
+require_once _3RD_PARTY_PATH_NOTAIL . DIRECTORY_SEPARATOR . 'larcity' . DIRECTORY_SEPARATOR . 'helpers.php';
+
+require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'autoload.php');
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace
