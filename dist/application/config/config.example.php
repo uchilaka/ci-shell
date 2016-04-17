@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /** @important be sure to include the use statements **/
 use LarCity\CodeIgniter\Shell;
 use UChilaka\CodeIgniter;
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
