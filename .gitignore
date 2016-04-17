@@ -1,4 +1,4 @@
-test/vendor
+#test/vendor
 composer.v1.json
 *.zip
 archive/*.zip
@@ -7,4 +7,4 @@ archive/*.zip
 !dist/application/db_changes/*
 !dist/application/helpers/*
 !dist/application/third_party/larcity/*
-dist/application/system
+#dist/application/system
