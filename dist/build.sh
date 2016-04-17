@@ -3,3 +3,6 @@
 
 XDIR=$(pwd)
 echo "Currenty @ ${XDIR}..."
+
+# Create symlinks
+ln -s 
