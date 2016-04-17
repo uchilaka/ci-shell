@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ee4a20a67279813815d6435475ee07d7",
-    "content-hash": "124af74ee9acf91316107f188947de35",
+    "hash": "829cbf93ed7c69bfc95773b42dd7bd90",
+    "content-hash": "e15085ca4fa0bb9c507d2a8377eee13d",
     "packages": [
         {
             "name": "adoy/oauth2",
@@ -404,54 +404,12 @@
                 "response"
             ],
             "time": "2015-05-04 20:22:00"
-        },
-        {
-            "name": "uchilaka/ci-auth0client",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/uchilaka/com.larcity.ci-auth0client.git",
-                "reference": "1e2329e7b7063c40e0e5f3d8170c4e3a81de2015"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/uchilaka/com.larcity.ci-auth0client/zipball/1e2329e7b7063c40e0e5f3d8170c4e3a81de2015",
-                "reference": "1e2329e7b7063c40e0e5f3d8170c4e3a81de2015",
-                "shasum": ""
-            },
-            "require": {
-                "auth0/auth0-php": "~3.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "UChilaka\\CodeIgniter": "dist/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Uche Chilaka",
-                    "email": "uche@larcity.com"
-                }
-            ],
-            "description": "Library to integrate Auth0 functionality into Auth flow for LarCity projects",
-            "support": {
-                "source": "https://github.com/uchilaka/com.larcity.ci-auth0client/tree/master",
-                "issues": "https://github.com/uchilaka/com.larcity.ci-auth0client/issues"
-            },
-            "time": "2016-04-17 00:10:26"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "uchilaka/ci-auth0client": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

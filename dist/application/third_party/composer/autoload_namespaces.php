@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname(dirname($vendorDir)));
 
 return array(
-    'UChilaka\\CodeIgniter' => array($baseDir . '/dist', $vendorDir . '/uchilaka/ci-auth0client/dist'),
-    'OAuth2' => array($vendorDir . '/adoy/oauth2/src', $vendorDir . '/bshaffer/oauth2-server-php/src'),
+    'OAuth2' => array($vendorDir . '/bshaffer/oauth2-server-php/src', $vendorDir . '/adoy/oauth2/src'),
     'LarCity\\CodeIgniter\\Shell' => array($baseDir . '/dist'),
 );
