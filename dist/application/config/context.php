@@ -1,5 +1,6 @@
 <?php
 /** Example environment setup using customized ContextOption sub class **/
+use LarCity\CodeIgniter\Shell;
 
 // Declare third party path constant
 if(!defined('_3RD_PARTY_PATH_NOTAIL')) {
@@ -10,32 +11,32 @@ if(!defined('_3RD_PARTY_PATH_NOTAIL')) {
 require_once _3RD_PARTY_PATH_NOTAIL . DIRECTORY_SEPARATOR . 'larcity' . DIRECTORY_SEPARATOR . 'helpers.php';
 
 // Run environment tests
-require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'larcity', 'LarcityContextOption.php');
+# require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'larcity', 'LarcityContextOption.php');
 
 $contexts = [
-    LarcityContextOption::TEST_PROD => new LarcityContextOption([
+    Shell\LarcityContextOption::TEST_PROD => new Shell\LarcityContextOption([
         'asset_path' => '/usr/share/codelibs/',
-        'env' => \LarcityContextOption::TEST_PROD
+        'env' => Shell\LarcityContextOption::TEST_PROD
     ]),
-    LarcityContextOption::TEST_SANDBOX => new LarcityContextOption([
+    Shell\LarcityContextOption::TEST_SANDBOX => new Shell\LarcityContextOption([
         'asset_path' => '/usr/share/codelibs/',
-        'env' => \LarcityContextOption::TEST_SANDBOX
+        'env' => Shell\LarcityContextOption::TEST_SANDBOX
     ]),
-    LarcityContextOption::TEST_HOMENET => new LarcityContextOption([
+    Shell\LarcityContextOption::TEST_HOMENET => new Shell\LarcityContextOption([
         'asset_path' => '/usr/share/codelibs/',
-        'env' => \LarcityContextOption::TEST_HOMENET
+        'env' => Shell\LarcityContextOption::TEST_HOMENET
     ]),
-    LarcityContextOption::TEST_HOMEDEV => new LarcityContextOption([
+    Shell\LarcityContextOption::TEST_HOMEDEV => new Shell\LarcityContextOption([
         'asset_path' => '/usr/share/codelibs/',
-        'env' => \LarcityContextOption::TEST_HOMEDEV
+        'env' => Shell\LarcityContextOption::TEST_HOMEDEV
     ]),
-    LarcityContextOption::TEST_ROGUE => new LarcityContextOption([
+    Shell\LarcityContextOption::TEST_ROGUE => new Shell\LarcityContextOption([
         'asset_path' => '/Applications/MAMP/htdocs/assets/',
-        'env' => \LarcityContextOption::TEST_ROGUE
+        'env' => Shell\LarcityContextOption::TEST_ROGUE
     ]),
 ];
 
 // test and configure active context
-LarcityContextOption::testSet($contexts);
+Shell\LarcityContextOption::testSet($contexts);
 
-$config['context'] = LarcityContextOption::getActiveOfSet($contexts);
+$config['context'] = Shell\LarcityContextOption::getActiveOfSet($contexts);

@@ -1,4 +1,6 @@
 <?php
+use LarCity\CodeIgniter\Shell;
+
 function makepath() {
     $bits = func_get_args();
     if (is_array($bits)) {

@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/** @important be sure to include the use statements **/
-use LarCity\CodeIgniter\Shell;
-use UChilaka\CodeIgniter;
+/** @important be sure to include the use statements if you utilize any of the member classes **/
+# use LarCity\CodeIgniter\Shell;
+# use UChilaka\CodeIgniter;
 
 /*
 |--------------------------------------------------------------------------
