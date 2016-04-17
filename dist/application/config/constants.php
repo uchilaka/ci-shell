@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /** Example environment setup using customized ContextOption sub class **/
-use LarCity\CodeIgniter\Shell;
 
 // Declare third party path constant
 if(!defined('_3RD_PARTY_PATH_NOTAIL')) {

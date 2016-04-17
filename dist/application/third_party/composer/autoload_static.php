@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit23e56e3784eb10ac3631c15d30790c27
 {
     public static $files = array (
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
@@ -61,26 +61,19 @@ class ComposerStaticInit23e56e3784eb10ac3631c15d30790c27
     );
 
     public static $prefixesPsr0 = array (
-        'o' => 
-        array (
-            'org\\bovigo\\vfs' => 
-            array (
-                0 => __DIR__ . '/..' . '/mikey179/vfsStream/src/main/php',
-            ),
-        ),
         'O' => 
         array (
             'OAuth2' => 
             array (
-                0 => __DIR__ . '/..' . '/adoy/oauth2/src',
-                1 => __DIR__ . '/..' . '/bshaffer/oauth2-server-php/src',
+                0 => __DIR__ . '/..' . '/bshaffer/oauth2-server-php/src',
+                1 => __DIR__ . '/..' . '/adoy/oauth2/src',
             ),
         ),
         'L' => 
         array (
             'LarCity\\CodeIgniter\\Shell' => 
             array (
-                0 => __DIR__ . '/..' . '/uchilaka/ci-shell/copy-contents-to-ci-root',
+                0 => __DIR__ . '/../../../..' . '/dist',
             ),
         ),
     );

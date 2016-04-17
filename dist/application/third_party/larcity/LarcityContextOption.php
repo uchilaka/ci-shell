@@ -2,7 +2,7 @@
 namespace LarCity\CodeIgniter\Shell;
 
 /** @FYI example customization of the ContextOption class **/
-# require_once __DIR__ . DIRECTORY_SEPARATOR . 'ContextOption.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'ContextOption.php';
 
 class LarcityContextOption extends ContextOption {
     

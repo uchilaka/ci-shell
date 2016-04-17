@@ -3,7 +3,7 @@
 use LarCity\CodeIgniter\Shell;
 
 // Run environment tests
-# require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'larcity', 'LarcityContextOption.php');
+require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'larcity', 'LarcityContextOption.php');
 
 $contexts = [
     Shell\LarcityContextOption::TEST_PROD => new Shell\LarcityContextOption([

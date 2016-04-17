@@ -411,12 +411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/uchilaka/com.larcity.codeigniter.shell.git",
-                "reference": "dcfe15e29875e3bfbd46e601f2c4343733651950"
+                "reference": "63884e62d7e67f79c7e4e64a0ca081b114f9a70c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uchilaka/com.larcity.codeigniter.shell/zipball/dcfe15e29875e3bfbd46e601f2c4343733651950",
-                "reference": "dcfe15e29875e3bfbd46e601f2c4343733651950",
+                "url": "https://api.github.com/repos/uchilaka/com.larcity.codeigniter.shell/zipball/63884e62d7e67f79c7e4e64a0ca081b114f9a70c",
+                "reference": "63884e62d7e67f79c7e4e64a0ca081b114f9a70c",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "source": "https://github.com/uchilaka/com.larcity.codeigniter.shell/tree/master",
                 "issues": "https://github.com/uchilaka/com.larcity.codeigniter.shell/issues"
             },
-            "time": "2016-04-17 02:50:18"
+            "time": "2016-04-17 02:53:26"
         }
     ],
     "packages-dev": [],

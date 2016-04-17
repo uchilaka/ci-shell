@@ -74,8 +74,8 @@ class ContextOption {
     public static function getActiveOfSet($contextOptionsSet = []) {
         if(is_array($contextOptionsSet)) {
             foreach($contextOptionsSet as $option) {
-                if(!is_a($option, 'ContextOption')) {
-                    die('Items in $contextOptionsSet MUST be instances of ContextOption. Fatal error.');
+                if(!is_a($option, 'LarCity\CodeIgniter\Shell\ContextOption')) {
+                    die("Items in $contextOptionsSet MUST be instances of ContextOption. Class type found: " . get_class($option) . "  Fatal error.");
                 }
                 if($option->isVerified()) {
                     return $option;
