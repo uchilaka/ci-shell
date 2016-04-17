@@ -20,10 +20,16 @@
         "bshaffer/oauth2-server-php": "~1.8",
         "auth0/auth0-php": "~3.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/uchilaka/ci-auth0client.git"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
         "bshaffer/oauth2-server-php": "~1.8",
-        "auth0/auth0-php": "~3.0"
+        "uchilaka/ci-auth0client": "dev-master"
     },
     "autoload": {
         "psr-0": {
