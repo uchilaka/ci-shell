@@ -10,7 +10,7 @@ if(!defined('_3RD_PARTY_PATH_NOTAIL')) {
 require_once _3RD_PARTY_PATH_NOTAIL . DIRECTORY_SEPARATOR . 'larcity' . DIRECTORY_SEPARATOR . 'helpers.php';
 
 // Run environment tests
-require_once makepath(__DIR__, 'LarcityContextOption.php');
+require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'larcity', 'LarcityContextOption.php');
 
 $contexts = [
     LarcityContextOption::TEST_PROD => new LarcityContextOption([
