@@ -68,9 +68,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Welcome to CodeIgniter (LarCity Edition)!</h1>
 
 	<div id="body">
+		<p>If you can see this page, congrats! You have successfully setup our CI inspired shell for apps at LarCity. We'll include all of our awesome features in this library for 
+		cool stuff like:
+			<ul>
+			<li>Auth0 Integration</li>
+			<li>Cloud storage integration</li>
+			</ul>
+			And tons more. The path to our project is: <a href="https://github.com/uchilaka/com.larcity.codeigniter.shell" target="_blank">https://github.com/uchilaka/com.larcity.codeigniter.shell</a>. 
+		</p>
+
+		<p>
+		Got questions? <a href="https://twitter.com/intent/tweet?via=uchechilaka&text=Was wondering...&hashtags=ci-shell" target="_blank">Drop us a line on Twitter</a>. And now, some 
+		messages from the awesome folks @ CodeIgniter.
+		</p>
+
+		<hr />
+
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>

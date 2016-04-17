@@ -1,5 +1,5 @@
 <?php
-/** Example environment setup using customized ContextOption sub class **/
+/** Example implementation of ContextOption class to determine app context **/
 use LarCity\CodeIgniter\Shell;
 
 // Run environment tests
