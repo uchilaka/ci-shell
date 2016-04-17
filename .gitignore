@@ -1,11 +1,11 @@
-!test/vendor/uchilaka
+#!test/vendor/uchilaka
 test/vendor
 composer.v1.json
 *.zip
 archive/*.zip
-!dist/application/controllers/*
-!dist/application/models/*
-!dist/application/db_changes/*
-!dist/application/helpers/*
-!dist/application/third_party/larcity/*
+#!dist/application/controllers/*
+#!dist/application/models/*
+#!dist/application/db_changes/*
+#!dist/application/helpers/*
+#!dist/application/third_party/larcity/*
 #dist/application/system
