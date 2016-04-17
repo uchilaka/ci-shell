@@ -20,13 +20,25 @@
         "bshaffer/oauth2-server-php": "~1.8",
         "auth0/auth0-php": "~3.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/uchilaka/com.larcity.ci-auth0client.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/uchilaka/com.larcity.codeigniter.shell.git"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
-        "bshaffer/oauth2-server-php": "~1.8"
+        "bshaffer/oauth2-server-php": "~1.8",
+        "uchilaka/ci-auth0client": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "LarCity\\CodeIgniter\\Shell": "dist/"
+            "LarCity\\CodeIgniter\\Shell": "dist/",
+            "UChilaka\\CodeIgniter": "dist/"
         }
     }
 }
