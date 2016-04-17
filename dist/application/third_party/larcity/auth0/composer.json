@@ -1,0 +1,27 @@
+{
+    "name": "uchilaka/ci-auth0client",
+    "description": "Library to integrate Auth0 functionality into Auth flow for LarCity projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uche Chilaka",
+            "email": "uche@larcity.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "dependencies": {
+        "auth0/auth0-php": "~3.0"
+    },
+    "devDependencies": {
+        "auth0/auth0-php": "~3.0"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "auth0/auth0-php": "~3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "UChilaka\\CodeIgniter": "dist/"
+        }
+    }    
+}
