@@ -23,7 +23,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/uchilaka/ci-auth0client.git"
+            "url": "https://github.com/uchilaka/com.larcity.ci-auth0client.git"
         }
     ],
     "require": {
