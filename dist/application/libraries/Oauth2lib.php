@@ -24,7 +24,7 @@ class Oauth2lib {
             'password'=>$authdb->password
         );
         // $this->store = new OAuth2\Storage\Pdo($oauth_config);
-        $this->store = new Shell\Auth\LarCityOAuth2Pdo($oauth_config);
+        $this->store = new LarCityOAuth2Pdo($oauth_config);
         // setup oauth server
         $token_lifetime=60 * 60 * 24 * 30;
         $this->server = new OAuth2\Server($this->store, [ 'access_lifetime'=> $token_lifetime, 'refresh_token_lifetime'=>$token_lifetime * 2 ]);
