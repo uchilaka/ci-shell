@@ -12,6 +12,8 @@ if(!defined('_3RD_PARTY_PATH_NOTAIL')) {
 require_once _3RD_PARTY_PATH_NOTAIL . DIRECTORY_SEPARATOR . 'larcity' . DIRECTORY_SEPARATOR . 'helpers.php';
 
 require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'autoload.php');
+
+// use LarCity\CodeIgniter\Shell;
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace

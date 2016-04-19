@@ -57,7 +57,6 @@ $config['index_page'] = 'index.php';
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
 $config['uri_protocol']	= 'REQUEST_URI';
-
 /*
 |--------------------------------------------------------------------------
 | URL suffix

@@ -79,6 +79,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</ul>
 			And tons more. The path to our project is: <a href="https://github.com/uchilaka/com.larcity.codeigniter.shell" target="_blank">https://github.com/uchilaka/com.larcity.codeigniter.shell</a>. 
 		</p>
+                
+                <h3>Loaded Classes</h3>
+                Here are all the classes automagically (got that from one of my co-students at a recent training ;)) included by 
+                composer:
+                <p />
+                <?php 
+                $loadedClasses = get_declared_classes();
+                if(!empty($loadedClasses)) {
+                    print_r($loadedClasses);
+                } else {
+                    echo "<em>No loaded classes passed to view.";
+                }
+                ?>
+                
+                <p>Here's an example of parameters passed to the view:</p>
+                <?php 
+                if(!empty($viewParameters)) {
+                    print_r($viewParameters);
+                } else {
+                    echo "<em>No parameters to show. To test this, pass a variable into the view using CI syntax with a key `viewParameters`.</em>";
+                }
+                ?>
 
 		<p>
 		Got questions? <a href="https://twitter.com/intent/tweet?via=uchechilaka&text=Was wondering...&hashtags=ci-shell" target="_blank">Drop us a line on Twitter</a>. And now, some 
