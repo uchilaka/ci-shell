@@ -1,15 +1,10 @@
 <?php
+require_once App::mkpath(__DIR__, 'BaseController.php');
 /**
  * @notes
  * For customization, read Auth0's documentation for php: https://auth0.com/docs/quickstart/backend/php/
- * 
- * @requires uchilaka/ci-shell/dist/application/controllers/BaseController.php 
- * */
-
-# namespace UChilaka\CodeIgniter;
-namespace LarCity\CodeIgniter\Shell\Auth;
-
-class LarCityAuthClient {
+*/
+class LarCityAuthClientController extends BaseController {
 
     private $decodedToken;
     protected $CI;
