@@ -1,5 +1,5 @@
 <?php
-require_once App::mkpath(__DIR__, 'BaseController.php');
+require_once makepath(__DIR__, 'BaseController.php');
 /**
  * @notes
  * For customization, read Auth0's documentation for php: https://auth0.com/docs/quickstart/backend/php/
