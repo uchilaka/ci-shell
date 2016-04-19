@@ -5,7 +5,7 @@ class Oauth2lib {
     
     const REQUESTTYPE_RESOURCE = 'resource';
     const REQUESTTYPE_ACCESS_TOKEN = 'access_token';
-    private $CI;
+    protected $CI;
     // oauth server
     var $server;
     // oauth data store
