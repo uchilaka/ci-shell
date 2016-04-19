@@ -1,6 +1,8 @@
 <?php
 use LarCity\CodeIgniter\Shell;
 
+require_once App::mkpath(dirname(__DIR__), 'third_party', 'larcity', 'auth', 'LarCityOAuth2Pdo.php');
+
 class Oauth2lib {
     
     const REQUESTTYPE_RESOURCE = 'resource';
