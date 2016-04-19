@@ -9,7 +9,7 @@ class Oauth2lib {
     // oauth server
     var $server;
     // oauth data store
-    private $store;
+    protected $store;
     
     public function __construct() {
         $this->CI =& get_instance();
