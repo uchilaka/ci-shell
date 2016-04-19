@@ -114,12 +114,16 @@ class App implements LarCityAppInterface {
     }
 
     static function mkpath() {
+        // requires makepath() @ /application/third_party/larcity/helpers.php
+        return call_user_func_array(makepath, func_get_args());
+        /*
         $bits = array_map(function( $str ) {
             return rtrim($str, DIRECTORY_SEPARATOR);
         }, func_get_args());
         if (is_array($bits)) {
             return implode(DIRECTORY_SEPARATOR, $bits);
         }
+        */
     }
 
     function parsePutVars() {
