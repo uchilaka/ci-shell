@@ -27,7 +27,8 @@
     },
     "autoload": {
         "psr-0": {
-            "LarCity\\CodeIgniter\\Shell\\": "dist/"
+            "LarCity\\CodeIgniter\\Shell\\": "dist/",
+            "LarCity\\CodeIgniter\\Shell\\Auth\\": "dist/"
         }
     }
 }
