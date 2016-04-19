@@ -1,5 +1,4 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
 //define("DDS", DIRECTORY_SEPARATOR);
 
 class Dir {

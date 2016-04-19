@@ -1,6 +1,4 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
-
 class Curl {
     
     private $CI;

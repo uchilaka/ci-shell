@@ -1,10 +1,11 @@
 <?php
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 // Autoload libraries
 require_once makepath(dirname(__DIR__), 'third_party', 'autoload.php');
+
+use LarCity\CodeIgniter\Shell;
 
 class BaseController extends CI_Controller {
 

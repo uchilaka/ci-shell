@@ -1,32 +1,36 @@
 <?php
+
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'BaseController.php';
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends BaseController {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-            $this->viewParameters = [
-                'argLoadedClasses' => get_declared_classes()
-            ];
-            $this->load->view('welcome_message', [
-                'viewParameters' => $this->viewParameters
-            ]);
-	}
+    /**
+     * Index Page for this controller.
+     *
+     * Maps to the following URL
+     * 		http://example.com/index.php/welcome
+     * 	- or -
+     * 		http://example.com/index.php/welcome/index
+     * 	- or -
+     * Since this controller is set as the default controller in
+     * config/routes.php, it's displayed at http://example.com/
+     *
+     * So any other public methods not prefixed with an underscore will
+     * map to /index.php/welcome/<method_name>
+     * @see https://codeigniter.com/user_guide/general/urls.html
+     */
+    public function index() {
+        $this->viewParameters = [
+            'argLoadedClasses' => get_declared_classes()
+        ];
+        $this->load->view('welcome_message', [
+            'viewParameters' => [
+                'jedi' => 'Luke Skywalker',
+                'side' => 'Light'
+            ]
+        ]);
+    }
+
 }

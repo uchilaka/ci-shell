@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
                 <h3>Loaded Classes</h3>
                 Here are all the classes automagically (got that from one of my co-students at a recent training ;)) included by 
-                composer:
+                composer (LOOK ON THE TAIL END OF THIS PRINT OUT FOR YOUR CUSTOM LIBRARIES AND CLASSES TO MAKE SURE THEY ARE GETTING LOADED!):
                 <p />
                 <?php 
                 $loadedClasses = get_declared_classes();

@@ -9,7 +9,7 @@
 # namespace UChilaka\CodeIgniter;
 namespace LarCity\CodeIgniter\Shell\Auth;
 
-class Auth0client {
+class LarcityAuth0client {
 
     private $decodedToken;
     protected $CI;

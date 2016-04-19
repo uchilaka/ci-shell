@@ -420,12 +420,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/uchilaka/com.larcity.codeigniter.shell.git",
-            "reference": "eef4c825f76bd8b2cb8522bd8111ea9a60dc75f5"
+            "reference": "efa544c87d020554fb4a52a96aecec9abc3fd816"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/uchilaka/com.larcity.codeigniter.shell/zipball/eef4c825f76bd8b2cb8522bd8111ea9a60dc75f5",
-            "reference": "eef4c825f76bd8b2cb8522bd8111ea9a60dc75f5",
+            "url": "https://api.github.com/repos/uchilaka/com.larcity.codeigniter.shell/zipball/efa544c87d020554fb4a52a96aecec9abc3fd816",
+            "reference": "efa544c87d020554fb4a52a96aecec9abc3fd816",
             "shasum": ""
         },
         "require": {
@@ -433,7 +433,7 @@
             "bshaffer/oauth2-server-php": "~1.8",
             "php": ">=5.4.0"
         },
-        "time": "2016-04-17 04:26:33",
+        "time": "2016-04-19 07:13:50",
         "type": "library",
         "installation-source": "source",
         "autoload": {

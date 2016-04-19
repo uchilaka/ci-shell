@@ -59,10 +59,10 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 $autoload['libraries'] = [
-    //'app' => 'App',
-    //'Curl',
-    //'dir',
-    //'array2xml'
+    'app' => 'App',
+    'curl',
+    'dir',
+    'array2xml'
 ];
 
 /*

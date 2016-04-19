@@ -71,7 +71,7 @@ class ComposerStaticInit23e56e3784eb10ac3631c15d30790c27
         ),
         'L' => 
         array (
-            'LarCity\\CodeIgniter\\Shell' => 
+            'LarCity\\CodeIgniter\\Shell\\' => 
             array (
                 0 => __DIR__ . '/../../../..' . '/dist',
             ),
