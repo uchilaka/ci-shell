@@ -1,14 +1,6 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
-// require_once FCPATH . 'application' . DS . 'third_party' . DS . 'bshaffer' . DS . 'oauth2-server-php' . DS . 'src' . DS . 'OAuth2' . DS . 'Autoloader.php';
+namespace LarCity\CodeIgniter\Shell\Auth;
 
-# require_once "/Applications/MAMP/htdocs/assets/common/php/oauth2-server/src/OAuth2/Autoloader.php";
-// OAuth2\Autoloader::register();
-
-/**
- * Description of LarcityOAuthPdo
- * @author uche
- */
 class OAuth2LarcityPdo extends OAuth2\Storage\Pdo {
     /** oauth_users is a Read-Only table since it is being derived as a view from the `users` table * */
 
