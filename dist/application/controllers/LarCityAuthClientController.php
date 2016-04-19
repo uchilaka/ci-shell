@@ -1,4 +1,5 @@
 <?php
+// requires makepath() from /application/third_party/larcity/helpers.php
 require_once makepath(__DIR__, 'BaseController.php');
 /**
  * @notes
