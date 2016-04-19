@@ -5,7 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 // Declare third party path constant
 if(!defined('_3RD_PARTY_PATH_NOTAIL')) {
-    define('_3RD_PARTY_PATH_NOTAIL', dirname(__DIR__) . DIRECTORY_SEPARATOR . 'third_party');
+    define('_3RD_PARTY_PATH_NOTAIL', APPPATH . 'third_party');
+}
+$ci_shell_3rd_party_path = APPPATH . 'ci-shell' . DIRECTORY_SEPARATOR . 'third_party';
+if(!defined('CISHELL_3RD_PARTY_PATH_NOTAIL')) {
+    define('CISHELL_3RD_PARTY_PATH_NOTAIL', $ci_shell_3rd_party_path);
 }
 
 // Refrerence our helpers file of important functions from our (symlinked) larcity third party directory
