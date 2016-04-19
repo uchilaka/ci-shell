@@ -22,8 +22,8 @@ class LarCityAuthClientController extends BaseController {
         $provider = null;
         // This assumes you are utilizing the BaseController.php class
         if ($this->controllerIsAccessedSecurely()) {
-            $idToken = $this->CI->input->get('id_token', TRUE);
-            $provider = $this->CI->input->get('provider', TRUE);
+            $idToken = $this->input->get('id_token', TRUE);
+            $provider = $this->input->get('provider', TRUE);
         }
         switch($provider) {
             case self::AUTH_PROVIDER_DOMAIN_AUTH0:
@@ -33,13 +33,13 @@ class LarCityAuthClientController extends BaseController {
     }
     
     public function controllerIsAccessedSecurely() {
-        $segments = $this->CI->uri->segment_array();
+        $segments = $this->uri->segment_array();
         return in_array('secure', $segments);
     }
 
     public function requireAuth0Login() {
         // authenticate
-        $authorizationHeader = $this->CI->input->get_request_header('Authorization', TRUE);
+        $authorizationHeader = $this->input->get_request_header('Authorization', TRUE);
 
         if ($authorizationHeader == null) {
             header('HTTP/1.0 401 Unauthorized');
@@ -61,7 +61,7 @@ class LarCityAuthClientController extends BaseController {
         $auth0Profile = $this->getProfile();
         
         // please reference uchilaka/ci-shell/dist/application/controllers/BaseController.php for info on the set, get and other helper controller methods
-        $this->CI->set('Profile', $auth0Profile);
+        $this->set('Profile', $auth0Profile);
     }
 
     public function getProfile() {
