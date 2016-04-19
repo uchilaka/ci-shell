@@ -1,9 +1,8 @@
 <?php
-
-require_once FCPATH . 'application' . DS . 'third_party' . DS . 'bshaffer' . DS . 'oauth2-server-php' . DS . 'src' . DS . 'OAuth2' . DS . 'Autoloader.php';
+// require_once FCPATH . 'application' . DS . 'third_party' . DS . 'bshaffer' . DS . 'oauth2-server-php' . DS . 'src' . DS . 'OAuth2' . DS . 'Autoloader.php';
 
 # require_once "/Applications/MAMP/htdocs/assets/common/php/oauth2-server/src/OAuth2/Autoloader.php";
-OAuth2\Autoloader::register();
+// OAuth2\Autoloader::register();
 
 /**
  * Description of LarcityOAuthPdo
