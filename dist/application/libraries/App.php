@@ -3,10 +3,17 @@ interface LarCityAppInterface {
 
     // declare a private $supportedContexts array
     public function getContext();
+    public function testContexts();
     public function contextIs($keyInSupportedContexts);
     
 }
 
+/** A NOTE ON APP CONTEXTS
+ * =======================
+ * We all have to deal with environment variables. Contexts give us a way to "pre-set" what the criteria for an 
+ * environment is, and have our app automatically switch it's configuration as it gets deployed to different 
+ * environments, with a "Hail Mary" context if all else fails
+ **/
 class App implements LarCityAppInterface {
 
     var $CI;
@@ -18,9 +25,10 @@ class App implements LarCityAppInterface {
     const METHOD_PATCH = 'PATCH';
     const HASH_TYPE = 'sha256';
     
-    const CONTEXT_DEV = 'dev';
-    const CONTEXT_PROD = 'prod';
-    const CONTEXT_ROGUE = 'rogue';
+    const CONTEXT_DEV = 'env.dev';
+    const CONTEXT_PROD = 'env.prod';
+    const CONTEXT_ROGUE = 'env.rogue';
+    const CONTEXT_HAILMARY = 'env.testfailed_hailmary';
 
     // we will initialize this in the constructor
     private $contexts = [];
@@ -46,12 +54,14 @@ class App implements LarCityAppInterface {
 
     public function testContexts() {
         $this->contextAudit['host'] = $_SERVER['HTTP_HOST'];
+        // clear results of last context test - if something is in there
+        $this->instanceContext = null;
         // test for the app's current context
         foreach ($this->contexts as $contextKey => $possibleContext) {
             $passedTest = false;
             if ($possibleContext['test']) {
-                $this->instanceContext = $contextKey;
                 $passedTest = true;
+                $this->instanceContext = $contextKey;
             }
             $this->contextAudit[$contextKey] = [
                 'key' => $contextKey,
@@ -64,6 +74,10 @@ class App implements LarCityAppInterface {
                 // ID priority (prod, then dev, then rogue - for example) so this works for you
                 break;
             }
+        }
+        // If all the tests fail - Hail Mary!
+        if(empty($this->instanceContext)) {
+            $this->instanceContext = self::CONTEXT_HAILMARY;
         }
     }
     
