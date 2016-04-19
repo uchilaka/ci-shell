@@ -1,7 +1,7 @@
 <?php
 namespace LarCity\CodeIgniter\Shell\Auth;
 
-class OAuth2LarcityPdo extends OAuth2\Storage\Pdo {
+class LarCityOAuth2Pdo extends OAuth2\Storage\Pdo {
     /** oauth_users is a Read-Only table since it is being derived as a view from the `users` table * */
 
     /** Password algorithm for LarCity.com is needed to verify user credentials * */

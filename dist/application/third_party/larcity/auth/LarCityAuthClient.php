@@ -9,24 +9,39 @@
 # namespace UChilaka\CodeIgniter;
 namespace LarCity\CodeIgniter\Shell\Auth;
 
-class Auth0client {
+class LarCityAuthClient {
 
     private $decodedToken;
     protected $CI;
     protected $config;
     protected $userProfile;
+    
+    const AUTH_PROVIDER_DOMAIN_AUTH0 = 'larcity.auth0.com';
 
     public function __construct() {
         $this->CI = & get_instance();
         // load configuration from file
         $this->config = config_item('auth0');
+        $idToken = null;
+        $provider = null;
         // This assumes you are utilizing the BaseController.php class
-        if ($this->CI->isSecureAccess()) {
-            $this->requireLogin();
+        if ($this->controllerIsAccessedSecurely()) {
+            $idToken = $this->CI->input->get('id_token', TRUE);
+            $provider = $this->CI->input->get('provider', TRUE);
+        }
+        switch($provider) {
+            case self::AUTH_PROVIDER_DOMAIN_AUTH0:
+                $this->requireAuth0Login();
+                break;
         }
     }
+    
+    public function controllerIsAccessedSecurely() {
+        $segments = $this->CI->uri->segment_array();
+        return in_array('secure', $segments);
+    }
 
-    public function requireLogin() {
+    public function requireAuth0Login() {
         // authenticate
         $authorizationHeader = $this->CI->input->get_request_header('Authorization', TRUE);
 
