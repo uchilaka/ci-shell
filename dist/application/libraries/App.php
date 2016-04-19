@@ -17,6 +17,7 @@ class App implements LarCityAppInterface {
     const METHOD_PUT = 'PUT';
     const METHOD_PATCH = 'PATCH';
     const HASH_TYPE = 'sha256';
+    
     const CONTEXT_DEV = 'dev';
     const CONTEXT_PROD = 'prod';
     const CONTEXT_ROGUE = 'rogue';
@@ -25,31 +26,49 @@ class App implements LarCityAppInterface {
     private $contexts = [];
     // store the first positive context result string here 
     private $instanceContext = null;
+    private $contextAudit = [];
 
     public function __construct() {
         $this->CI = & get_instance();
         $this->contexts = [
-            self::CONTEXT_DEV => [
-                'test' => (preg_match("/http\:\/\//", $_SERVER['HTTP_HOST']) === 1) && is_dir('/Users/Shared/www')
-            ],
             self::CONTEXT_PROD => [
-                'test' => (preg_match("/https?\:\/\/localhost/", $_SERVER['HTTP_HOST']) !== 1)
+                'test' => (preg_match("/^localhost/", $_SERVER['HTTP_HOST']) !== 1)
+            ],
+            self::CONTEXT_DEV => [
+                'test' => (preg_match("/^localhost/", $_SERVER['HTTP_HOST']) === 1 && is_dir('/Users/Shared/www'))
             ],
             self::CONTEXT_ROGUE => [
-                'test' => is_dir('/Applications/MAMP/htdocs/') and ( preg_match("/^https?\:\/\/localhost/", $_SERVER['HTTP_HOST']) === 1)
+                'test' => (is_dir('/Applications/MAMP/htdocs/') and preg_match("/^localhost/", $_SERVER['HTTP_HOST']) === 1)
             ]
         ];
         $this->testContexts();
     }
 
     public function testContexts() {
+        $this->contextAudit['host'] = $_SERVER['HTTP_HOST'];
         // test for the app's current context
         foreach ($this->contexts as $contextKey => $possibleContext) {
+            $passedTest = false;
             if ($possibleContext['test']) {
                 $this->instanceContext = $contextKey;
+                $passedTest = true;
+            }
+            $this->contextAudit[$contextKey] = [
+                'key' => $contextKey,
+                'test' => $possibleContext['test'],
+                'passed' => $passedTest
+            ];
+            if($passedTest) {
+                // No further tests needed ONCE you identify one. 
+                // In the constructor initialization of your contexts, arrage the contexts in their order of 
+                // ID priority (prod, then dev, then rogue - for example) so this works for you
                 break;
             }
         }
+    }
+    
+    public function getLastContextAudit() {
+        return $this->contextAudit;
     }
 
     public function getContext() {

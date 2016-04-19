@@ -28,7 +28,9 @@ class Welcome extends BaseController {
         $this->load->view('welcome_message', [
             'viewParameters' => [
                 'jedi' => 'Luke Skywalker',
-                'side' => 'Light'
+                'side' => 'Light',
+                'context' => $this->App->getContext(),
+                'contextAudit' => $this->App->getLastContextAudit()
             ]
         ]);
     }
