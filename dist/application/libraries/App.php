@@ -31,10 +31,10 @@ class App implements LarCityAppInterface {
     const CONTEXT_HAILMARY = 'env.testfailed_hailmary';
 
     // we will initialize this in the constructor
-    private $contexts = [];
+    protected $contexts = [];
     // store the first positive context result string here 
-    private $instanceContext = null;
-    private $contextAudit = [];
+    protected $instanceContext = null;
+    protected $contextAudit = [];
 
     public function __construct() {
         $this->CI = & get_instance();
