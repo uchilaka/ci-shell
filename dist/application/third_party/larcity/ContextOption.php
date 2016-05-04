@@ -47,7 +47,7 @@ class ContextOption {
                 return preg_match("/^localhost/", $_SERVER['HTTP_HOST']);
 
             case self::ENVTEST_PROD:
-                return preg_match("/^https?\:\/\/(www3?\.)?larcity\.com/", $_SERVER['HTTP_HOST']);
+                return preg_match("/^https?\:\/\/((www3|www|api)\.)?larcity\.com/", $_SERVER['HTTP_HOST']);
         }
         return false;
     }

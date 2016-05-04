@@ -26,7 +26,7 @@ class LarcityContextOption extends ContextOption {
                 return preg_match("/^(sandbox2\.larcity\.com|demo\.larcity\.com|www3\.sandbox\.larcity\.com|larcitysbx01)/", $_SERVER['HTTP_HOST']);
 
             case self::TEST_PROD:
-                return is_dir('/var/www/html/api.larcity.com/') and preg_match('/^(larcity\.com|larcityapp01|(api|www3)\.larcity\.com)/i', $_SERVER['HTTP_HOST']);
+                return is_dir('/var/www/html/api.larcity.com/') and preg_match('/^(larcityapp01|((api|www3)\.)?larcity\.com)/i', $_SERVER['HTTP_HOST']);
 
             case self::TEST_HOMENET:
                 return preg_match("/^www4\.larcity\.com$/", $_SERVER['HTTP_HOST']);
