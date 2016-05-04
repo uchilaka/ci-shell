@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f19b32804cb22456632afa0d77f09929",
+    "hash": "829cbf93ed7c69bfc95773b42dd7bd90",
     "content-hash": "e15085ca4fa0bb9c507d2a8377eee13d",
     "packages": [
         {
@@ -49,16 +49,16 @@
         },
         {
             "name": "auth0/auth0-php",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auth0/auth0-PHP.git",
-                "reference": "d4a0776a1f2a4cdf4b27befd2821599c659d3319"
+                "reference": "9892fa97a03d6b45eaa4d4f61338ce9471b54d49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auth0/auth0-PHP/zipball/d4a0776a1f2a4cdf4b27befd2821599c659d3319",
-                "reference": "d4a0776a1f2a4cdf4b27befd2821599c659d3319",
+                "url": "https://api.github.com/repos/auth0/auth0-PHP/zipball/9892fa97a03d6b45eaa4d4f61338ce9471b54d49",
+                "reference": "9892fa97a03d6b45eaa4d4f61338ce9471b54d49",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +91,7 @@
                 }
             ],
             "description": "Auth0 PHP SDK.",
-            "time": "2016-04-15 13:28:15"
+            "time": "2016-05-02 14:01:17"
         },
         {
             "name": "bshaffer/oauth2-server-php",
@@ -191,12 +191,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "85cb758d7367f3aaaa8ffc9269e777919c5f68bb"
+                "reference": "7011740238e3468486889c194f209bba51118f95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/85cb758d7367f3aaaa8ffc9269e777919c5f68bb",
-                "reference": "85cb758d7367f3aaaa8ffc9269e777919c5f68bb",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7011740238e3468486889c194f209bba51118f95",
+                "reference": "7011740238e3468486889c194f209bba51118f95",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-04-06 17:59:33"
+            "time": "2016-04-29 17:35:12"
         },
         {
             "name": "guzzlehttp/promises",
