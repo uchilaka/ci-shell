@@ -40,5 +40,12 @@ class LarcityContextOption extends ContextOption {
         }
         return false;
     }
-
+    
+    public static function testSet( $contextOptions = [] ) {
+        foreach($contextOptions as $testName=>&$context) {
+            if(is_a($context, 'LarcityContextOption')) {
+                $context->setVerified($context->matches($testName) ? true : false);
+            }
+        }
+    }
 }
