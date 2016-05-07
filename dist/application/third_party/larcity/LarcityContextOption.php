@@ -1,8 +1,8 @@
 <?php
-//require_once __DIR__ . DIRECTORY_SEPARATOR . 'ContextOption.php';
-use LarCity\CodeIgniter\Shell;
+namespace LarCity\CodeIgniter\Shell;
+# use LarCity\CodeIgniter\Shell;
 
-class LarcityContextOption extends ContextOption {
+class LarcityContextOption extends ContextOption implements ContextOptionInterface {
 
     static function matches($mode = ContextOption::TEST_HOMEDEV) {
         switch ($mode) {

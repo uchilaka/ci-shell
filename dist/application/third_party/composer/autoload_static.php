@@ -65,15 +65,15 @@ class ComposerStaticInit23e56e3784eb10ac3631c15d30790c27
         array (
             'OAuth2' => 
             array (
-                0 => __DIR__ . '/..' . '/adoy/oauth2/src',
-                1 => __DIR__ . '/..' . '/bshaffer/oauth2-server-php/src',
+                0 => __DIR__ . '/..' . '/bshaffer/oauth2-server-php/src',
+                1 => __DIR__ . '/..' . '/adoy/oauth2/src',
             ),
         ),
         'L' => 
         array (
             'LarCity\\CodeIgniter\\Shell' => 
             array (
-                0 => __DIR__ . '/../../../..' . '/dist',
+                0 => __DIR__ . '/..' . '/larcity',
             ),
         ),
     );
