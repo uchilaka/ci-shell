@@ -1,5 +1,4 @@
 <?php
-
 class LarCityOAuthServer extends OAuth2\Server {
 
     public function addGrantType(/* \OAuth2\GrantType\GrantTypeInterface */ $grantType, $identifier = null) {

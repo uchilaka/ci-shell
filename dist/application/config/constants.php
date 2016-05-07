@@ -16,6 +16,8 @@ if(!defined('CISHELL_3RD_PARTY_PATH_NOTAIL')) {
 require_once _3RD_PARTY_PATH_NOTAIL . DIRECTORY_SEPARATOR . 'larcity' . DIRECTORY_SEPARATOR . 'helpers.php';
 
 require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'autoload.php');
+// Autoload manual OAuth2 server
+require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'OAuth2', 'Autoloader.php');
 
 // use LarCity\CodeIgniter\Shell;
 /*

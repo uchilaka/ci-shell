@@ -366,7 +366,7 @@ class Server implements ResourceControllerInterface,
         return $value;
     }
 
-    public function addGrantType(GrantTypeInterface $grantType, $identifier = null)
+    public function addGrantType(/*GrantTypeInterface*/ $grantType, $identifier = null)
     {
         if (!is_string($identifier)) {
             $identifier = $grantType->getQuerystringIdentifier();
