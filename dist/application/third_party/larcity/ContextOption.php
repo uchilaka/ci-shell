@@ -1,6 +1,4 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
-
 interface ContextOptionInterface {
     
     static function matches($mode);
@@ -12,6 +10,8 @@ interface ContextOptionInterface {
     public function setVerified();
     
 }
+
+namespace LarCity\CodeIgniter\Shell;
 
 // declare context option class
 class ContextOption {

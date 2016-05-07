@@ -17,7 +17,7 @@ require_once _3RD_PARTY_PATH_NOTAIL . DIRECTORY_SEPARATOR . 'larcity' . DIRECTOR
 
 require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'autoload.php');
 // Autoload manual OAuth2 server
-require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'OAuth2', 'Autoloader.php');
+require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'bshaffer', 'oauth2-server-php', 'src', 'OAuth2', 'Autoloader.php');
 
 // use LarCity\CodeIgniter\Shell;
 /*
