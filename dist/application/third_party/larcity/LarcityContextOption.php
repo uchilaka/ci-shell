@@ -1,6 +1,9 @@
 <?php
-# namespace LarCity\Shell;
-class LarcityContextOption extends LarCity\Shell\ContextOption implements ContextOptionInterface {
+namespace LarCity\Shell;
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'ContextOption.php';
+
+class LarcityContextOption extends ContextOption implements ContextOptionInterface {
 
     static function matches($mode = ContextOption::TEST_HOMEDEV) {
         switch ($mode) {

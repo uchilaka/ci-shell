@@ -1,6 +1,6 @@
 <?php
 /** Example implementation of ContextOption class to determine app context **/
-use LarCity\CodeIgniter;
+use LarCity\Shell;
 
 // Run environment tests
 require_once makepath(_3RD_PARTY_PATH_NOTAIL, 'larcity', 'LarcityContextOption.php');
