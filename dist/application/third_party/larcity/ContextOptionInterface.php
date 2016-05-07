@@ -1,5 +1,5 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
+namespace LarCity\Shell;
 
 interface ContextOptionInterface {
     

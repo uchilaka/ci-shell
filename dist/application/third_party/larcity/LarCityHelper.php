@@ -1,5 +1,5 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
+namespace LarCity\Shell;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'helpers.php';
 

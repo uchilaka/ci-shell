@@ -1,5 +1,5 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
+namespace LarCity\Shell;
 
 // declare context option class
 class ContextOption {

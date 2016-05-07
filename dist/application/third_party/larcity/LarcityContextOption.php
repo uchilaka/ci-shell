@@ -1,8 +1,6 @@
 <?php
-namespace LarCity\CodeIgniter\Shell;
-# use LarCity\CodeIgniter\Shell;
-
-class LarcityContextOption extends ContextOption implements ContextOptionInterface {
+# namespace LarCity\Shell;
+class LarcityContextOption extends LarCity\Shell\ContextOption implements ContextOptionInterface {
 
     static function matches($mode = ContextOption::TEST_HOMEDEV) {
         switch ($mode) {

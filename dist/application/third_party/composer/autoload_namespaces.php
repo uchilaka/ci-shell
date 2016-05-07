@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname(dirname($vendorDir)));
 
 return array(
-    'OAuth2' => array($vendorDir . '/bshaffer/oauth2-server-php/src', $vendorDir . '/adoy/oauth2/src'),
-    'LarCity\\CodeIgniter\\Shell' => array($vendorDir . '/larcity'),
+    'OAuth2' => array($vendorDir . '/bshaffer/oauth2-server-php/src'),
+    'LarCity\\Shell' => array($baseDir . '/dist'),
 );
