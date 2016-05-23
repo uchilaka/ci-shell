@@ -52,6 +52,16 @@ class Oauth2lib {
         $this->server->setScopeUtil($scopeUtil);
     }
     
+    public function getLifeEndTime() {
+        $date = new DateTime();
+        $date->add(new DateInterval('P30D')); // 30 days
+        return $date->format("Y-m-d H:i:s");
+    }
+
+    public static function getValidScopes() {
+        return explode(',', self::validScopes);
+    }
+    
     public function getServer() {
         return $this->server;
     }
