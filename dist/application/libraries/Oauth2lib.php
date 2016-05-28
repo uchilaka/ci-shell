@@ -8,14 +8,16 @@ class Oauth2lib {
     const REQUESTTYPE_RESOURCE = 'resource';
     const REQUESTTYPE_ACCESS_TOKEN = 'access_token';
     protected $CI;
-    // oauth server
-    var $server;
     // oauth data store
     protected $store;
+    // database group
+    protected $db_group;
+    // oauth server
+    var $server;
     
     public function __construct() {
         $this->CI =& get_instance();
-        $authdb = $this->CI->load->database('default', TRUE);
+        $authdb = $this->CI->load->database($this->db_group, TRUE);
         // cleanup
         $authdb->query("delete from oauth_access_tokens where DATEDIFF(STR_TO_DATE(expires, '%Y-%m-%d %H:%i:%s'), CURDATE()) < -30;");
         $oauth_config = array(
@@ -50,6 +52,10 @@ class Oauth2lib {
         ));
         $scopeUtil = new OAuth2\Scope($memory);
         $this->server->setScopeUtil($scopeUtil);
+    }
+    
+    public function setDatabaseGroup($groupIndexInConfigFile) {
+        $this->db_group = $groupIndexInConfigFile;
     }
     
     public function getLifeEndTime() {
