@@ -15,8 +15,11 @@ class Oauth2lib {
     // oauth server
     var $server;
     
-    public function __construct() {
+    public function __construct( $config=[ 'db_group' => 'default' ] ) {
         $this->CI =& get_instance();
+        // set $db group from config
+        $this->db_group = $config['db_group'];
+        // load authentication database
         $authdb = $this->CI->load->database($this->db_group, TRUE);
         // cleanup
         $authdb->query("delete from oauth_access_tokens where DATEDIFF(STR_TO_DATE(expires, '%Y-%m-%d %H:%i:%s'), CURDATE()) < -30;");
