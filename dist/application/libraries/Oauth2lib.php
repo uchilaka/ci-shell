@@ -19,6 +19,8 @@ class Oauth2lib {
         $this->CI =& get_instance();
         // set $db group from config
         $this->db_group = $config['db_group'];
+        // set authentication group in controller
+        $this->CI->set('db_group', $this->db_group);
         // load authentication database
         $authdb = $this->CI->load->database($this->db_group, TRUE);
         // cleanup
