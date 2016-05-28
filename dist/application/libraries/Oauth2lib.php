@@ -59,6 +59,10 @@ class Oauth2lib {
         $this->server->setScopeUtil($scopeUtil);
     }
     
+    public function getDatabaseGroup() {
+        return $this->db_group;
+    }
+    
     public function setDatabaseGroup($groupIndexInConfigFile) {
         $this->db_group = $groupIndexInConfigFile;
     }
