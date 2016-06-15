@@ -298,23 +298,29 @@ class App implements LarCityAppInterface {
         return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
     }
 
-    static function encode($text) {
+    static function encode($text, $salt=null) {
         $num = rand(0, 100);
+        if(empty($salt)) {
+            $salt = config_item('encryption_key');
+        }
         if ($num < 35) {
-            return App::base64url_encode(sha1(App::SALT) . $text . md5(App::SALT));
+            return App::base64url_encode(sha1($salt) . $text . md5($salt));
         } else if ($num >= 35 and $num < 60) {
-            return App::base64url_encode(md5(App::SALT) . $text . sha1(App::SALT));
+            return App::base64url_encode(md5($salt) . $text . sha1($salt));
         } else if ($num >= 60 and $num < 75) {
-            return App::base64url_encode($text . md5(App::SALT) . md5(App::SALT));
+            return App::base64url_encode($text . md5($salt) . md5($salt));
         } else if ($num >= 75 and $num < 90) {
-            return App::base64url_encode($text . sha1(App::SALT) . sha1(App::SALT));
+            return App::base64url_encode($text . sha1($salt) . sha1($salt));
         } else {
-            return App::base64url_encode($text . sha1(App::SALT) . md5(App::SALT));
+            return App::base64url_encode($text . sha1($salt) . md5($salt));
         }
     }
 
-    static function decode($text) {
-        return str_replace(md5(App::SALT), '', str_replace(sha1(App::SALT), '', App::base64url_decode($text)));
+    static function decode($text, $salt=null) {
+        if(empty($salt)) {
+            $salt = config_item('encryption_key');
+        }
+        return str_replace(md5($salt), '', str_replace(sha1($salt), '', App::base64url_decode($text)));
     }
 
     static function context() {
